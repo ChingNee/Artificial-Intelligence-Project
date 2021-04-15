@@ -23,9 +23,11 @@ Learning how to write the alphabet is one of the first steps in your child's jou
 
 The best way to teach the children to write the alphabet is doing practice using AI technology. Children can use this handwritten character recognition system to check their understanding quickly. It is because this system can predict what is the character that write in the text field provided and display the result. If the result is correct, it means that the child able to write this letter and know how to write it properly. 
 
+
 ![Coding](https://github.com/CeciliaChongChingNee/Artificial-Intelligence-Project/blob/main/AI-Project-Documentation/poster-handwrting.jpg)
 
 Figure 1 shows the alphabet that will be learnt by the child and we will use them in this system
+
 
 ## C.  DATASET
 
