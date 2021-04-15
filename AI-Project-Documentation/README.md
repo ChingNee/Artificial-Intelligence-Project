@@ -2,7 +2,7 @@
 
 ## A. PROJECT SUMMARY
 
-- [ ]**Project Title:**
+- [ ] **Project Title:**
 - Handwritten Character Recognition
 
 - [ ] **Team Members:** 
