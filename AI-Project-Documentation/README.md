@@ -2,9 +2,9 @@
 
 ## A. PROJECT SUMMARY
 
-- [ ] **Project Title:** Handwritten Character Recognition
+**Project Title:** Handwritten Character Recognition
 
-- [ ] **Team Members:** 
+**Team Members:** 
 - Cecilia Chong Ching Nee (B031910390)
 - Siew Chung Seng (B031910342)
 - Vishan Menan A/L Balakrishnan (B031910018)
