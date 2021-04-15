@@ -5,15 +5,15 @@
 - [ ] **Project Title:** Handwritten Character Recognition
 
 - [ ] **Team Members:** 
-- Cecilia Chong Ching Nee
-- Siew Chung Seng
-- Vishan Menan A/L Balakrishnan
-- Muhammad Putra Alif Bin Ismail
+- Cecilia Chong Ching Nee (B031910390)
+- Siew Chung Seng (B031910342)
+- Vishan Menan A/L Balakrishnan (B031910018)
+- Muhammad Putra Alif Bin Ismail (B031910115)
 
 
 - [ ] **Objectives:**
-- Break out the project goal into more specific objectives
-- [insert]
+- to develop a character recognition system
+- to 
 - [insert]
 - [insert]
 
