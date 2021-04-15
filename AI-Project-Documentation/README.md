@@ -19,8 +19,9 @@
 
 ##  B. ABSTRACT 
 
-Learning how to write the alphabet is one of the first steps in your child's journey of learning. Therefore, nowadays, some of the parents buy a handwriting workbook and get their child to go through the exercise in it page by page. However, this method need a lot of paper to practice the characters. 
+Learning how to write the alphabet is one of the first steps in your child's journey of learning. By ages four to five, children will start writing letters. Children will learn to write the alphabet in preschool and kindergarden, bu it may be beneficial to have your child practice writing letters at home. Therefore, nowadays, some of the parents buy a handwriting workbook and get their child to go through the exercise in it page by page. However, this method need a lot of paper to practice the characters. In addition, it is more difficult for children to judge whether the alphabet that written by them are correct or wrong. 
 
+The best way to teach the children to write the alphabet is doing practice using AI technology. Children can use this handwritten character recognition system to check their understanding quickly. It is because this system can predict what is the character that write in the text field provided and display the result. If the result is correct, it means that the child able to write this letter and know how to write it properly. 
 
 ![Coding](https://miro.medium.com/max/1400/1*fyfSOSKswsmV0n7Wdy6R4Q.jpeg)
 Figure 1 shows the AI output of detecting which user is not wearing a face mask or inappropriate face mask.
