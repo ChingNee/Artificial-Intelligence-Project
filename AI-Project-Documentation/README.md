@@ -4,11 +4,11 @@
 
 **Project Title:** Handwritten Character Recognition
 
-**Team Members:** 
-- [Cecilia Chong Ching Nee]
-- [Siew Chung Seng]
-- [Vishan Menan A/L Balakrishnan]
-- [Muhammad Putra Alif Bin Ismail]
+- [] **Team Members:** 
+- Cecilia Chong Ching Nee
+- Siew Chung Seng
+- Vishan Menan A/L Balakrishnan
+- Muhammad Putra Alif Bin Ismail
 
 
 - [ ] **Objectives:**
