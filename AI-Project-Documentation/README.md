@@ -4,7 +4,7 @@
 
 **Project Title:** Handwritten Character Recognition
 
-- [] **Team Members:** 
+- [ ] **Team Members:** 
 - Cecilia Chong Ching Nee
 - Siew Chung Seng
 - Vishan Menan A/L Balakrishnan
