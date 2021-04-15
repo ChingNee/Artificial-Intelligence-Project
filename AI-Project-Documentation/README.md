@@ -2,8 +2,7 @@
 
 ## A. PROJECT SUMMARY
 
-- [ ] **Project Title:**
-- Handwritten Character Recognition
+- [ ] **Project Title:** Handwritten Character Recognition
 
 - [ ] **Team Members:** 
 - Cecilia Chong Ching Nee
