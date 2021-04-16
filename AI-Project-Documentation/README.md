@@ -28,16 +28,106 @@ Figure 1 shows the alphabet that will be learnt by the child and we will use the
 
 
 ## C.  DATASET
+This project will be split into 3 parts, which are:
+- Preprocessing : Here we will focus on preprocessing the data to allow for better training results
+- Training : Here we will focus on the training of the model and the validation of training results
+- Deployment : In this stage we will deploy the model by loading it and allow user to interact with it through GUI such as website
+
+Our dataset for training are shown as below:
+![image](https://user-images.githubusercontent.com/80866120/115016783-224cec80-9ee8-11eb-8147-88782634bd45.png)
+
+Figure 2 shows sample of the data used for training the model
+
+The dataset we'll be using contains 26 folders (A-Z) containing handwritten images in size 2828 pixels, each alphabet in the image is centre fitted to 2020 pixel box.
+
+Each image is stored as Gray-level
+
+Kernel CSVToImages contains script to convert .CSV file to actual images in .png format in structured folder.
+
+The images are taken from NIST(https://www.nist.gov/srd/nist-special-database-19) and NMIST large dataset and few other sources which were then formatted as mentioned above.
+
+Our goal is to train a CNN model that is capable of predicting/recognizing the inputted image of a character.
 
 
 ## D.   PROJECT STRUCTURE
+The following directory is our structure of our project
+
+    ├── dataset
+    │ ├── A-Z handwritten characters.csv [372,450 entries]
+    | └── images
+    |   ├── A
+    |   └── B
+    |   └── C
+    |   └── D
+    |   └── E
+    |   └── F
+    |   └── G
+    |   └── H
+    |   └── I
+    |   └── J
+    |   └── K
+    |   └── L
+    |   └── M
+    |   └── N
+    |   └── o
+    |   └── P
+    |   └── Q
+    |   └── R
+    |   └── S
+    |   └── T
+    |   └── U
+    |   └── V
+    |   └── W
+    |   └── X
+    |   └── Y
+    |   └── Z
+    ├── model
+    │ ├── best_model.h5
+    ├── trainModelScript.py
+    ├── generateCSVScript.py
+    ├── testModelScript.py
+    └── server.py
+    28 directories, 6 files
 
 
-## E   TRAINING THE COVID-19 FACE MASK DETECTION
+## E   TRAINING THE HANDWRITTEN CHARACTER RECOGNITION MODEL
+We are now ready to train our model using Keras, Tensorflow, and CNN.
 
+First we shall perpare the training data, go ahead and run the following command to generate the csv
+
+$python generateCSVScript.py
+
+Next we shall train the model and generate the model
+Go ahead and run the following command:
+
+$python trainModelScript.py
+
+Moving on, we shall test the model by using our own sample data
+
+$python testModelScript.py
+
+Lastly, we shall deploy the model with the following command
+
+$python server.py
 
 ## F.  RESULT AND CONCLUSION
 
+Handwritten character recognition on website hosted in real-time
+
+You can then launch the recognition using the following command
+
+$python server.py
+
+![image](https://user-images.githubusercontent.com/80866120/115021984-4f50cd80-9eef-11eb-8508-841611ded592.png)
+Figure 3 shows result of model training and validation
+
+As shown in the figure above, we are able to get an accuracy of 97.5% on our model.
 
 ## G.   PROJECT PRESENTATION 
+
+In this project, you will be able to create a Handwritten character recoginition system using Keras, TensorFlow and CNN. To create the model we collect image of handwritten character and preprocessed them into csv for training purpose. We fine-tuned the model and is able to obtained a classifier that is 97.5% accurate.
+
+We then load this model on a server that allows user to draw a character and use it to predict/recognize what did the user wrote.
+
+
 
