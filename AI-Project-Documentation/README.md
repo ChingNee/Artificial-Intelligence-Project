@@ -133,6 +133,6 @@ In this project, you will be able to create a Handwritten character recoginition
 
 We then load this model on a server that allows user to draw a character and use it to predict/recognize what did the user wrote.
 
-[![demo](https://img.youtube.com/vi/qIdv7Nh5d0Q&t=84s/0.jpg)](https://www.youtube.com/watch?v=qIdv7Nh5d0Q&t=84s "demo")
+[![demo](https://img.youtube.com/vi/u3FLVbNn9Os/0.jpg)](https://www.youtube.com/watch?v=u3FLVbNn9Os "demo")
 
 
