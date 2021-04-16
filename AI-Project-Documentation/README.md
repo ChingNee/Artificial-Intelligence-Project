@@ -123,11 +123,15 @@ Figure 3 shows result of model training and validation
 
 As shown in the figure above, we are able to get an accuracy of 97.5% on our model.
 
+[![Figure4](https://img.youtube.com/vi/vT1xNDjoTv0/0.jpg)](https://www.youtube.com/watch?v=vT1xNDjoTv0 "Figure4")
+Figure 4 shows result by using handwritten character recognition system
+
 ## G.   PROJECT PRESENTATION 
 
 In this project, you will be able to create a Handwritten character recoginition system using Keras, TensorFlow and CNN. To create the model we collect image of handwritten character and preprocessed them into csv for training purpose. We fine-tuned the model and is able to obtained a classifier that is 97.5% accurate.
 
 We then load this model on a server that allows user to draw a character and use it to predict/recognize what did the user wrote.
 
+[![demo](https://img.youtube.com/vi/qIdv7Nh5d0Q&t=84s/0.jpg)](https://www.youtube.com/watch?v=qIdv7Nh5d0Q&t=84s "demo")
 
 
