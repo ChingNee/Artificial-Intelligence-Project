@@ -46,93 +46,83 @@ Kernel CSVToImages contains script to convert .CSV file to actual images in .png
 
 The images are taken from NIST(https://www.nist.gov/srd/nist-special-database-19) and NMIST large dataset and few other sources which were then formatted as mentioned above.
 
-Our goal is to train a CNN model that is capable of predicting/recognizing the inputted image of a character.
+Furthermore, we also developed a simple signature pad website that allow us collect actual data that would be use for model prediction during deployment. These images are written by using the same signature pad intended for deployment therefore simulating the actual performance. These data will be stored in another folder but in a similar manner and be only used for testing the model accuracy.
 
+Our goal is to train a CNN model that is capable of predicting/recognizing the inputted image of a character.
 
 ## D.   PROJECT STRUCTURE
 The following directory is our structure of our project
 
-    ├── dataset
-    │ ├── A-Z handwritten characters.csv [372,450 entries]
-    | └── images
-    |   ├── A
-    |   └── B
-    |   └── C
-    |   └── D
-    |   └── E
-    |   └── F
-    |   └── G
-    |   └── H
-    |   └── I
-    |   └── J
-    |   └── K
-    |   └── L
-    |   └── M
-    |   └── N
-    |   └── o
-    |   └── P
-    |   └── Q
-    |   └── R
-    |   └── S
-    |   └── T
-    |   └── U
-    |   └── V
-    |   └── W
-    |   └── X
-    |   └── Y
-    |   └── Z
-    ├── model
-    │ ├── best_model.h5
-    ├── trainModelScript.py
-    ├── generateCSVScript.py
-    ├── testModelScript.py
-    └── server.py
-    28 directories, 6 files
+    E:.
+    │   alphabet.yml
+    │   AlphabetData.zip
+    │   A_Z Handwritten Data.csv
+    │   Final Project Notebook.ipynb
+    │   image.jpg
+    │   model_hand.h5
+    │   README.md
+    │   serverApp.py
+    │
+    ├───.ipynb_checkpoints
+    │       Final Project Notebook-checkpoint.ipynb
+    │
+    ├───static
+    │       app.js
+    │       index.css
+    │       index.js
+    │       title.png
+    │
+    └───templates
+            index.html
+            website.html
 
 
 ## E   TRAINING THE HANDWRITTEN CHARACTER RECOGNITION MODEL
 We are now ready to train our model using Keras, Tensorflow, and CNN.
 
-First we shall perpare the training data, go ahead and run the following command to generate the csv
+Firstly, navigate to the project folder containing the files.
+Then we shall open up jupyter notebook to preprocess, train and test the model.
+We shall do that with the following command:
 
-$python generateCSVScript.py
+$jupyter notebook
 
-Next we shall train the model and generate the model
-Go ahead and run the following command:
-
-$python trainModelScript.py
-
-Moving on, we shall test the model by using our own sample data
-
-$python testModelScript.py
+Open the notebook named "Final Project Notebook.ipynb" and run all the source code in the notebook.
+First we will load the dataset and preprocess it. Next, we will split the data into 8:2 ratio for training and testing data.
+80% of the data will be the training data and the remaining 20% will be testing data. After that, we will train the model and validate
+the result using the test data.
 
 Lastly, we shall deploy the model with the following command
 
-$python server.py
+$python serverApp.py
+
+This will deploy the flask web application to test and use our model and will be hosted at localhost:5000.
+To port forward this localhost website to the public domain, we will be using ngrok to host it.
+
+We will port forward it to the public domain using the following command:
+
+$ngrok http 5000
+
+The public address is then shown and can be used to access the website anywhere with an internet connection.
 
 ## F.  RESULT AND CONCLUSION
 
-Handwritten character recognition on website hosted in real-time
+The following is the test result of our model against 74490 test images:
 
-You can then launch the recognition using the following command
+![image](https://user-images.githubusercontent.com/33794652/120072832-3fb8cd00-c0c8-11eb-99cf-97faea98291f.png)
 
-$python server.py
-
-![image](https://user-images.githubusercontent.com/80866120/115021984-4f50cd80-9eef-11eb-8508-841611ded592.png)
 Figure 3 shows result of model training and validation
 
-As shown in the figure above, we are able to get an accuracy of 97.5% on our model.
+As shown in the figure above, we are able to get an accuracy of 95% on our model.
 
-[![Figure4](https://img.youtube.com/vi/vT1xNDjoTv0/0.jpg)](https://www.youtube.com/watch?v=vT1xNDjoTv0 "Figure4")
+![image](https://user-images.githubusercontent.com/33794652/120072933-b786f780-c0c8-11eb-99ed-0d6b9317b63a.png)
 
-Figure 4 shows result by using handwritten character recognition system
+Figure 4 shows result by using handwritten character recognition web application
 
 ## G.   PROJECT PRESENTATION 
 
-In this project, you will be able to create a Handwritten character recoginition system using Keras, TensorFlow and CNN. To create the model we collect image of handwritten character and preprocessed them into csv for training purpose. We fine-tuned the model and is able to obtained a classifier that is 97.5% accurate.
+In this project, you will be able to create a Handwritten character recoginition system using Keras, TensorFlow and CNN. To create the model we collect image of handwritten character and preprocessed them into csv for training purpose. We fine-tuned the model and is able to obtained a classifier that is 95% accurate.
 
 We then load this model on a server that allows user to draw a character and use it to predict/recognize what did the user wrote.
 
 [![demo](https://img.youtube.com/vi/u3FLVbNn9Os/0.jpg)](https://www.youtube.com/watch?v=u3FLVbNn9Os "demo")
-
 
